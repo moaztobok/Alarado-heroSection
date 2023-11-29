@@ -12,19 +12,19 @@ const Toggle = () => {
     useEffect(() =>{
         if(theme==="dark"){
             document.querySelector("body").classList.add("dark");
-            document.querySelector("svg").classList.add("dark");
     }
 else{
     document.querySelector("body").classList.remove("dark");
     document.querySelector("svg").classList.add("dark");
-}});
-const handleThemeSwitch = () => {
+}},[theme]);
+const handleThemeSwitch = (event) => {
     setTheme(theme==="dark" ? "light" : "dark");
+    event.stopPropagation()
 };
   return (
 <div className='flex items-center justify-center'>
 <input type='checkbox' id="darkmode-toggle"
-onChange={handleThemeSwitch}
+onChange={(e)=>handleThemeSwitch(e)}
 />
 <label for="darkmode-toggle" >
 <svg className='moon'  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

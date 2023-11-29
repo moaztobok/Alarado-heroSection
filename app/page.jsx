@@ -6,7 +6,7 @@ const page = () => {
   return (
     <main className='max-container flex  md:flex-col-reverse sm:flex-col-reverse font-bold flexCenter md:text-[0.5rem] px-5'>
       
-      <div className='flex flex-col gap-5 sm:px-10 justify-center lg:h-[90vh]'>
+      <div className='flex flex-col gap-5 sm:px-5 justify-center lg:h-[90vh]'>
         <h3 className='text-[1.125rem] md:text-[0.8rem] capitalize font-semibold'>😎 SIMPLE WAY TO COMMUNICATE</h3>
         <h1 className='text-[3.75rem] md:text-[2rem] max-w-xl text-primary'>Actions for Accessibility in Design</h1>
         <p className=' max-w-xl text-MyDarkGray'>The fastest way to build and deploy websites with resusable components.</p>
@@ -15,11 +15,11 @@ const page = () => {
           <Link href='/' className='underline text-Bluey'>Get live demo</Link>
         </div>
         <div className='flex gap-10'>
-          <span className='flex'>
+          <span className='flex items-center'>
           <Image src='/Done_ring_round_fill.svg' alt='check' width={20} height={20}></Image>
           <p>No credit card required</p>
           </span>
-          <span className='flex'>
+          <span className='flex items-center'>
           <Image src='/Done_ring_round_fill.svg' alt='check' width={20} height={20}></Image>
           <p>No software to install</p>
           </span>
