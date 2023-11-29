@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
 @layer base {
   :root {
     --color-primary: 34 51 68;    
@@ -12,6 +11,7 @@
   .dark{
         --color-primary: 255 255 255;    
         --color-secondary: 17 23 41;
+        
     }
   
 @layer utilities {
@@ -34,4 +34,14 @@
     @apply flex items-center justify-end;
   }
 
+}
+@media (prefers-color-scheme: dark) {
+  .menu{
+    fill: white;
+    stroke: white;
+  }
+}
+.menu{
+  fill: rgb(34 51 68);
+  stroke: rgb(34 51 68);
 }

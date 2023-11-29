@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main className='max-container flex  md:flex-col-reverse sm:flex-col-reverse font-bold flexCenter md:text-[0.5rem]'>
+    <main className='max-container flex  md:flex-col-reverse sm:flex-col-reverse font-bold flexCenter md:text-[0.5rem] px-5'>
       
       <div className='flex flex-col gap-5 sm:px-10 justify-center lg:h-[90vh]'>
         <h3 className='text-[1.125rem] md:text-[0.8rem] capitalize font-semibold'>😎 SIMPLE WAY TO COMMUNICATE</h3>
